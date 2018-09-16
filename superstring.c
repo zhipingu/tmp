@@ -27,6 +27,7 @@ int read_data(char store[1000][25])
 {
     int line_num=0;
     while(gets(store[line_num++])!=NULL);
+    --line_num;
 
 #if DEBUG
     printf("=========\n");
